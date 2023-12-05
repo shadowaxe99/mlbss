@@ -1,0 +1,13 @@
+The file "MLBPredictor/SupportingFiles/Assets.xcassets" is a folder that contains the assets used in the application, such as images and icons. It's not a code file, so it doesn't contain any lines of code. Instead, it contains files in a specific format (.png, .jpg, .ico, etc.) that are used in the application. 
+
+For example, you might have the following files in your Assets.xcassets folder:
+
+- AppIcon.appiconset: This folder contains the app icon in various sizes.
+- LaunchImage.launchimage: This folder contains the launch image in various sizes.
+- PlayerImage.imageset: This folder contains the player image in various sizes.
+- PitcherImage.imageset: This folder contains the pitcher image in various sizes.
+- HitterImage.imageset: This folder contains the hitter image in various sizes.
+- VideoUploadIcon.imageset: This folder contains the video upload icon in various sizes.
+- BiomechanicsIcon.imageset: This folder contains the biomechanics icon in various sizes.
+
+Each of these folders would contain the respective images in 1x, 2x, and 3x sizes to support different screen resolutions.
