@@ -26,7 +26,12 @@ struct Player {
     }
     
     func analyzePerformance(with model: AIModel) -> PerformancePrediction {
-        return model.predictPerformance(for: self)
+        // Use the AIModel to predict the performance of the player
+        let performanceMetrics = model.predictPerformance(for: self)
+        
+        // Additional logic can be implemented here to analyze the predicted performance
+        
+        return performanceMetrics
     }
     
     func analyzeBiomechanics(with videoAnalysis: VideoAnalysis) -> Biomechanics {
