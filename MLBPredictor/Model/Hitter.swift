@@ -22,7 +22,6 @@ struct Hitter {
     }
     
     func predictPerformance(using model: AIModel) -> Double {
-        // This function will use the AIModel to predict the performance of the hitter
-        // The implementation of this function will depend on the specifics of the AIModel
+        return model.predictPerformance(forHitter: self)
     }
 }

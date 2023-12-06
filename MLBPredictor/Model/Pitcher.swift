@@ -7,6 +7,22 @@ struct Pitcher {
     var stats: PitcherStats
 }
 
+protocol AIModel {
+    func predictPerformance(for pitcher: Pitcher) -> PerformancePrediction
+}
+
+struct PerformancePrediction {
+    var expectedWins: Int
+    var expectedStrikeouts: Int
+    var expectedEarnedRunAverage: Double
+}
+
+extension Pitcher {
+    func predictPerformance(using model: AIModel) -> PerformancePrediction {
+        return model.predictPerformance(for: self)
+    }
+}
+
 struct PitcherStats {
     var gamesPlayed: Int
     var inningsPitched: Double
